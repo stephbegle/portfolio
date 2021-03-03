@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root { /*  creating the variables for our colors */
+  --primary-white: #fff;
+  --primary-purple: rgb(140, 127, 214);
+  --primary-dark: rbga(255, 255, 255, 0)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.nav-link {
+  /* font-weight: 500; */
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav ul li {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-nav > li > a { /* this is how we can shortcut the same styles for three sections */
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important; /* !important is necessary to overwrite the bootstrap rules in order for the colors here to work */
+  border-top: 0.1875rem solid var(--primary-dark); /* this is supposed to be the line that restricts the links from jumping since it wouldnt have the border on the top of the links */
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-brand {
+  max-width: 17.25rem;
+  color: var(--primary-white) !important;
+  font-family: 'Montserrat', sans-serif;
+  /* padding: 0 !important; */
+  height: 3rem !important;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  /* this is taking all of the links to style. a.active and a:focus are allowing the links to "be active" on the clicks */
+  border-top: 0.1875rem solid var(--primary-purple);
+}
+
+.navbar-nav > li > a:hover {
+  /* this is the action for when the cursor is hovering on the links */
+  border-top: 0.1875rem solid var(--primary-purple);
 }

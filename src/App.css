@@ -5,25 +5,29 @@ body {
 :root { /*  creating the variables for our colors */
   --primary-white: #fff;
   --primary-purple: rgb(140, 127, 214);
-  --primary-dark: rbga(255, 255, 255, 0)
+  --primary-dark: rbga(255, 255, 255, 0);
+  --primary-green: rgb(0, 155, 0);
+  --primary-yellow: rgb(202, 202, 6);
 }
 
+/**************************************** NAVBAR ****************************************/
 
-.nav-link {
+
+.nav-link { /* this is referencing the navbar spacing and cursor type */
   /* font-weight: 500; */
   letter-spacing: 0.0375rem;
   cursor: pointer;
 
 }
 
-nav ul li {
+nav ul li { /* this is referencing the navbar text */
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
 }
 
-.navbar-nav > li > a { /* this is how we can shortcut the same styles for three sections */
-  margin-right: 0.75rem;
-  margin-left: 0.75rem;
+.navbar-nav > li > a { /* this is how we reference the anchor tag that lives within the li tag within the navbar tag */
+  margin-right: 0.80rem;
+  margin-left: 0.10rem; 
   color: var(--primary-white) !important; /* !important is necessary to overwrite the bootstrap rules in order for the colors here to work */
   border-top: 0.1875rem solid var(--primary-dark); /* this is supposed to be the line that restricts the links from jumping since it wouldnt have the border on the top of the links */
   
@@ -39,10 +43,119 @@ nav ul li {
 
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
   /* this is taking all of the links to style. a.active and a:focus are allowing the links to "be active" on the clicks */
-  border-top: 0.1875rem solid var(--primary-purple);
+  border-top: 0.1875rem solid var(--primary-yellow);
 }
 
 .navbar-nav > li > a:hover {
   /* this is the action for when the cursor is hovering on the links */
-  border-top: 0.1875rem solid var(--primary-purple);
+  border-top: 0.1875rem solid var(--primary-yellow);
+}
+
+.resume-button { /* styling for the resume button */
+  border: 0.063rem solid var(--primary-yellow);
+  text-transform: uppercase;
+  /* border-radius: 0; */
+  border-width: 0.20rem;
+  padding: 0.425rem 0.625rem 0.425rem 0.625rem; 
+  color: var(--primary-white);
+  /* margin: 0.2rem;  --commented out for testing */
+  background-color: rgba(194, 186, 115, 0.322);
+  /* font-weight: 1000; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.resume-button:hover { /* so when the user hovers over the button, it highlights */
+  text-decoration: none;
+  background-color: var(--primary-yellow);
+  color: var(--primary-white);
+  transition: 0.2s ease-in-out;
+}
+
+/**************************************** HEADER ****************************************/
+
+.header-wraper { /* background image of the header ( image of my one ) */
+  position: relative;
+  background: url("DSC_0406.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.main-info { /* the information in the header, "Hi, my name is Stephanie" */
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; /* these top/left/right/bottom lines center the position of main-offer*/
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-info h1 { /* header text colors */
+  color: var(--primary-white);
+
+}
+
+/**************************************** TYPED TEXT ****************************************/
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white)
+}
+
+
+/**************************************** RESUME BUTTON ****************************************/
+
+.btn-main-offer {
+  border: 1px solid var(--primary-yellow);
+  text-transform: uppercase;
+  border-radius: 0;
+  border-width: 0.20rem;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem; /* convert from px to rem */
+  color: var(--primary-white);
+  margin: 2rem;
+  background-color: rgba(194, 186, 115, 0.322);
+  font-weight: 1000;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/**************************************** CONTAINER ****************************************/
+
+.container {
+  padding: 0.125rem 0.125rem 0.125rem 0.625rem; /* I changed these for the container of nav to fit the resume button nicely */
+  margin: 0px 20px;
+}
+
+/**************************************** ABOUT ME ****************************************/
+
+.me-wraper {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  margin: 5rem 5rem 5rem 5rem;
+}
+
+.about-me {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;   
+  padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+
+}
+
+h1 { /* About Me text being aligned on the page */
+  margin: 1rem 9rem 1rem 9rem; /* top left bottom right*/
+  padding: 2rem 2rem 2rem 2rem;
+  text-align: center;
+
+}
+
+.me-info {
+  margin: 2rem 25rem 2rem 2rem; /* top right bottom left */
+  padding: 2rem 25rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
 }

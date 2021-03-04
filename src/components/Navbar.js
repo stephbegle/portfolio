@@ -9,7 +9,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg navbar-light bg-light bg-dark" /* here we can change the color of the navbar */>
             <div className="container">
 
-                <a className="navbar-brand" href="#">Stephanie Begle</a>
+                <a className="navbar-brand" href="#">SB</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <FontAwesomeIcon icon={ faBars } style={{ color: "white"}}/>
                 </button>
@@ -28,6 +28,7 @@ const Navbar = () => {
                         <li className="nav-item" /* this list also contains a link */>
                             <a className="nav-link" href="#">Contact Me</a>
                         </li>
+                        <button className="resume-button" href="#">Resume</button>
                     </ul>
                 </div>
             </div>

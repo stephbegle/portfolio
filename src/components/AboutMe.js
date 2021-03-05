@@ -5,7 +5,8 @@ const AboutMe = () => {
     return (
         <>
         <div className="container-about py-5">
-        <h1 className="header-about">About Me</h1>
+        <h1 className="header-about">About Me<span style={{color:"aqua"}}>.</span>
+        </h1>
             <div className="row">
                 
                 <div className="col-lg-6 col-xm-12" /* creates a column space on the first half of the page from left to right (so the left side here) */ >
@@ -16,9 +17,7 @@ const AboutMe = () => {
                         <img className="profile-img" src={author} alt="author"/>
                     </div>
                 </div>
-
             </div>
-            
         </div>
         </>
     )

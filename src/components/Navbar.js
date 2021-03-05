@@ -6,7 +6,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons"
 const Navbar = () => {
     return (
         <>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light bg-dark" /* here we can change the color of the navbar */>
+        <nav className="navbar navbar-expand-lg" /* here we can change the color of the navbar */>
             <div className="container">
 
                 <a className="navbar-brand" href="#">SB</a>

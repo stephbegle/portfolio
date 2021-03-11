@@ -89,7 +89,7 @@ nav ul li { /* this is referencing the navbar text */
 
 .header-wraper { /* background image of the header ( image of my one ) */
   position: relative;
-  background: url("DSC_0406.jpg");
+  /*background: url("DSC_0406.jpg");*/
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -147,7 +147,7 @@ nav ul li { /* this is referencing the navbar text */
   /* text-transform:; */
   padding: 1rem 1rem 1rem 1rem;
   margin: 1rem 1rem 1rem 1rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 p {
@@ -180,3 +180,112 @@ p {
 }
 
 /**************************************** EXPERIENCE ****************************************/
+/* this is the padding to the left of the marker line when in mobile view */
+.experience {
+  padding: 0.2rem;
+}
+
+.experience-wrapper {
+  position: relative;
+  padding: 3.1255rem 0;
+  overflow: hidden;
+  background-color: var(--primary-grey);
+  opacity: .8;
+  /* background-repeat: repeat; this aint repeating btw*/
+}
+
+/* the header of experience*/
+.experience h1 {
+  color: var(--primary-white);
+  font-size: 1.2rem;
+}
+
+/* the circles on the timeline*/
+.experience-wrapper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  margin-left: -0.0625rem;
+  width: 0.125rem;
+  height: 100%;
+  background: var(--primary-white);
+  z-index: 1;
+}
+
+.timeline-block {
+  width: calc(50% + 0.5rem);
+  display: flex;
+  justify-content: space-between;
+  clear: both;
+}
+
+/* placement of the container on the right */
+.timeline-block-right {
+  float: right;
+}
+
+/* placement of the container on the left */
+.timeline-block-left {
+  float: left;
+  direction: rtl;
+}
+
+/* the timeline line */
+.marker {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 20%;
+  border: 0.3125rem solid var(--primary-aqua);
+  background: var(--primary-blue);
+  margin-top: 0.625rem;
+  z-index: 3;
+}
+
+/* this is the actual text context of timeline */
+.timeline-content {
+  width: 95%;
+  padding: 0 0.9375rem;
+  color: var(--primary-white);
+  direction: ltr;
+  background-color: var(--primary-blue);
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  padding: 0 5rem 0 5rem;
+}
+
+/* color of the years of timeline */
+.timeline-content h3 {
+  margin-top: 0.3125;
+  color: var(--primary-aqua);
+  font-weight: 500;
+  padding: 0.5rem 0 0 0;
+}
+
+/* this positions the year on the timeline next to the marker line */
+.year-pos-right {
+  text-align: right;
+}
+
+/* ----------- MEDIA --------------*/
+
+@media(max-width: 768px) {
+  .experience .container {
+    padding-left: 0;
+  }
+  .experience-wrapper::before {
+    left: 0.5rem;
+    margin-bottom: 1.875rem;
+  }
+  /* the width lets the mobile view cover the 100% of the page*/
+  .timeline-block-right {
+    float: none;
+    width: 100%;
+  }
+  /* the width lets the mobile view cover the 100% of the page*/
+  .timeline-block-left {
+    float: none;
+    direction: ltr;
+    width: 100%;
+  }
+}

@@ -14,6 +14,7 @@ body {
   --primary-purp: rgba(27, 33, 61, 0.911);
   --primary-blue: rgba(12, 20, 53, 0.959);
   --primary-aqua: rgba(106, 230, 252, 0.959);
+  --primary-purple-grey: rgba(27, 33, 61, 0.911);
 }
 
 /**************************************** NAVBAR ****************************************/
@@ -288,4 +289,45 @@ p {
     direction: ltr;
     width: 100%;
   }
+}
+
+/**************************************** PROJECTS ****************************************/
+/* padding above the word projects*/
+.project-wrapper {
+  /* background:;*/
+  padding: 3rem 0;
+
+}
+
+/* image sizes and border and padding */ 
+.project-image {
+  width: 15rem;
+  height: 8rem;
+  border: 1px solid var(--primary-aqua);
+  padding: 0 0.5rem;
+
+}
+
+.project-image-box {
+  position: relative;
+  margin: 1rem;
+
+}
+
+/* ----------- OVERFLOW --------------*/
+
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: var(--primary-blue);
+  width: 15rem;
+  height: 8rem;
+  top: 0;
+  border: 1px solid var(--primary-aqua);
+  cursor: pointer;
+}
+
+.project-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s;
 }

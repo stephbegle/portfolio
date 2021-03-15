@@ -29,6 +29,7 @@ const Navbar = () => {
                             <a className="nav-link" href="#">Contact Me</a>
                         </li>
                         <button className="resume-button" href="#">Resume</button>
+                        {/* <a href="#" className="btn-main-offer">Download Resume</a>   -> maybe will need to make the button tag an anchor tag?*/}
                     </ul>
                 </div>
             </div>

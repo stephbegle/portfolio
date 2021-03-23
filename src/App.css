@@ -152,24 +152,93 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 1rem;
 }
 
 .profile-img {
   width: 16rem;
   height: 11rem;
   padding: 0.3rem;
-  border: 1px solid var(--primary-aqua);
+  border: 3px solid var(--primary-aqua);
   border-radius: 2%;
+  margin-right: 3rem;
 }
 
 .container-about {
   margin: 5rem 2rem 5rem 2rem;
-
 }
 
 @media(max-width: 468px) {
   .profile-img {
-    width: 16rem
+    width: 16rem;
+    text-align: center;
+  }
+
+  .img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    margin: 5rem 2rem 5rem 5rem;
+  }
+
+  .container-about {
+    margin: 5rem 2rem 5rem 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .header-about {
+    text-align: center;
+  }
+
+  p {
+    line-height: 1.8rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media(min-width: 1024px) {
+  .header-about {
+    text-align: left;
+    /* text-transform:; */
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 2.2rem;
+  }
+
+  .container-about {
+    margin: 5rem 2rem 5rem 2rem;
+    padding: 5rem 1rem 5rem 10rem;
+  }
+
+  .profile-img {
+    padding: 0.3rem;
+    background-position-x: left;
+    margin-right: 3rem;
+    margin-left: -5rem;
+  }
+
+  .img-wrap {
+    padding: 1rem;
+    margin-bottom: 8rem;
+    margin-right: 5rem;
+  }
+
+  .img-wrap {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+}
+
+@media(min-width: 1200px) {
+  .container-about {
+    margin: 5rem 2rem 5rem 2rem;
+    padding: 5rem 1rem 5rem 15rem;
   }
 }
 
@@ -239,13 +308,13 @@ p {
 /* this is the actual text context of timeline */
 .timeline-content {
   width: 95%;
-  padding: 0 0.9375rem;
+  padding: 0 0 0.9375rem;
   color: var(--primary-white);
   direction: ltr;
   background-color: var(--primary-blue);
   border-radius: 1rem;
   font-size: 0.875rem;
-  padding: 0 5rem 0 5rem;
+  padding: 0 2rem 0 3rem;
 }
 
 /* color of the years of timeline */
@@ -275,12 +344,19 @@ p {
   .timeline-block-right {
     float: none;
     width: 100%;
+    padding-bottom: 1rem;
   }
   /* the width lets the mobile view cover the 100% of the page*/
   .timeline-block-left {
     float: none;
     direction: ltr;
     width: 100%;
+    font-size: 0.8em;
+    padding-bottom: 1rem;
+
+  }
+  .year-pos-right {
+    text-align: left;
   }
 }
 
@@ -338,7 +414,7 @@ p {
 }
 
 .contact p {
-  color: rgba(150, 150, 150, 0.856);
+  color: rgb(255, 255, 255);
   font-size: 1.2rem;
 }
 
@@ -347,16 +423,16 @@ p {
 .contact input, .contact textarea {
   width: 100%;
   box-sizing: border-box;
-  background: none;
+  background: white;
   resize: none;
   border: 0;
   border-bottom: 0.125rem solid var(--primary-grey);
   border-radius: 0;
-  color: var(--primary-aqua);
+  color: var(--primary-blue);
   outline: 0 !important;
   box-shadow: none !important;
   margin-bottom: 1rem;
-  padding-left: 0 !important;
+  padding-left: 0.1 !important;
 }
 
 .contact .container {
@@ -364,9 +440,10 @@ p {
 }
 
 .contact input:focus, .contact textarea:focus {
-  background: transparent;
-  color: var(--primary-aqua);
+  background: rgba(158, 230, 252, 0.705);
+  color: var(--primary-blue);
   border-bottom: 0.125rem solid var(--primary-grey);
+  font-weight: 800;
 }
 
 .contact textarea {
@@ -415,7 +492,7 @@ p {
   .contact .container {
     padding: 0 1rem;
   }
-  .contact p{
-    padding: 0 0.4rem;
+  .contact p {
+    padding: 0 0.9rem;
   }
 }

@@ -56,7 +56,7 @@ const Projects = () => {
     }
 
     return (
-        <div className="project-wrapper">
+        <div id="Projects" className="project-wrapper">
             <div className="container">
                 <h1 className="text-center py-5">Projects</h1>
                         {/*                          */}

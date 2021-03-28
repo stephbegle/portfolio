@@ -20,7 +20,7 @@ import { BiGitBranch } from "react-icons/bi";
 const Services = () => {
     return (
 
-        <div className="project-wrapper">
+        <div id="Services" className="project-wrapper">
             <div className="container">
                 <h1 className="text-center py-5">Some Skills</h1>
             </div>

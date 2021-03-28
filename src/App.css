@@ -1,6 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif !important;
-  background-color: rgba(27, 33, 61, 0.911) !important;
+  background-color: rgba(27, 33, 61, 0.911)  !important;
   color: var(--primary-white) !important;
 }
 
@@ -23,6 +23,10 @@ body {
 .container {
   padding: 0.125rem 0.125rem 0.125rem 0.625rem; /* I changed these for the container of nav to fit the resume button nicely */
   margin: 0rem 0.1rem 0rem 0rem;
+}
+
+.navbar {
+  background-color: rgb(50, 57, 87) ;
 }
 
 

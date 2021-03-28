@@ -443,6 +443,22 @@ p {
   color: blue;
 }
 
+/* ----------- MEDIA --------------*/
+/* so teh popupbox responds in the mobile version */
+@media(max-width: 768px){
+  .projects-image-popupbox {
+    width: 100%;
+  }
+}
+
+@media(max-height: 640px){
+  .project-wrapper {
+    height: 100%;
+  }
+  .projects-image-popupbox {
+    width: 40%;
+  }
+}
 /**************************************** CONTACT ****************************************/
 
 .contact {

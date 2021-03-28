@@ -246,6 +246,8 @@ p {
 /* this is the padding to the left of the marker line when in mobile view */
 .experience {
   padding: 0.2rem;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 3rem 1rem 1rem 1rem;
 }
 
 .experience-wrapper {
@@ -366,6 +368,8 @@ p {
   font-size: 1.2rem;
   margin-bottom: 3rem;
   text-align: left;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
 }
 .services-icons {
   text-align: center;
@@ -382,7 +386,6 @@ p {
 .project-wrapper {
   /* background:;*/
   padding: 3rem 0;
-
 }
 
 /* image sizes and border and padding */ 
@@ -391,13 +394,11 @@ p {
   height: 8rem;
   border: 1px solid var(--primary-aqua);
   padding: 0 0.5rem;
-
 }
 
 .project-image-box {
   position: relative;
   margin: 1rem;
-
 }
 
 /* ----------- OVERFLOW --------------*/
@@ -416,6 +417,30 @@ p {
 .project-image-box:hover .overflow {
   opacity: 60%;
   transition: 0.3s;
+}
+
+/* ----------- OVERFLOW BOX --------------*/
+.projects-image-popupbox {
+  width: 45rem;
+  padding: 0 0.5rem;
+  color: black;
+}
+
+.link-name {
+  color: black;
+}
+
+.para-desc  {
+  color: black;
+}
+
+.hyper-link {
+  cursor: pointer;
+  color: var(--primary-blue);
+}
+
+.hyper-link:hover {
+  color: blue;
 }
 
 /**************************************** CONTACT ****************************************/

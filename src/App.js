@@ -16,8 +16,8 @@ function App() {
     <Navbar />
     <Header />
     <AboutMe />
-    <Experience />
     <Services />
+    <Experience />
     <Projects />
     <Contact />
     <Footer />

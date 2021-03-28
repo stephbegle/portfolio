@@ -1,18 +1,10 @@
 import React from 'react'
-import {
-    FacebookShareButton,
-    FacebookIcon,
-    TwitterShareButton,
-    TwitterIcon,
-    RedditShareButton,
-    RedditIcon,
-    LinkedinShareButton,
-    LinkedinIcon
-} from "react-share";
+import { SiReddit } from "react-icons/si"
 import { FaGithub,
     FaLinkedin,
     FaInstagram,
-    FaFacebook
+    FaFacebook,
+    FaTwitter
 } from "react-icons/fa";
 import { Link } from "react-scroll";
 
@@ -52,18 +44,36 @@ const Footer = () => {
                     </div>
                     <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
                         <div className="d-flex justify-content-center">
-                            <FaGithub
-                            className="mx-3" size={36} 
-                            cursor="pointer"/>
-                            <FaLinkedin 
-                            className="mx-3" size={36} 
-                            cursor="pointer"/>
+                            <a href="https://github.com/stephbegle" target="_blank" rel="noopener noreferrer">
+                                <FaGithub
+                                className="mx-3" size={36}
+                                cursor="pointer"/>
+                            </a>
+                            <a href="https://www.linkedin.com/in/steph-begle/" target="_blank" rel="noopener noreferrer">
+                                <FaLinkedin 
+                                className="mx-3" size={36} 
+                                cursor="pointer"/>
+                            </a>
+                            <a href="https://www.facebook.com/sbegle" target="_blank" rel="noopener noreferrer">
                             <FaFacebook 
                             className="mx-3" size={36} 
                             cursor="pointer"/>
-                            <FaInstagram 
-                            className="mx-3" size={36} 
-                            cursor="pointer"/>
+                            </a>
+                            <a href="https://www.instagram.com/iso_artsy/" target="_blank" rel="noopener noreferrer">
+                                <FaInstagram 
+                                className="mx-3" size={36} 
+                                cursor="pointer"/>
+                            </a>
+                            <a href="https://twitter.com/stephbegle" target="_blank" rel="noopener noreferrer">
+                                <FaTwitter 
+                                className="mx-3" size={36} 
+                                cursor="pointer"/>
+                            </a>
+                            <a href="https://www.reddit.com/user/steph-beegull" target="_blank" rel="noopener noreferrer">
+                                <SiReddit 
+                                className="mx-3" size={36} 
+                                cursor="pointer"/>
+                            </a>
                         </div>
 
                     </div>

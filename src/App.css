@@ -5,7 +5,7 @@ body {
 }
 
 :root { /*  creating the variables for our colors */
-  --primary-white: #fff;
+  --primary-white: rgb(233, 233, 233);
   --primary-purple: rgb(140, 127, 214);
   --primary-dark: rbga(255, 255, 255, 0);
   --primary-green: rgb(0, 155, 0);
@@ -106,6 +106,7 @@ nav ul li { /* this is referencing the navbar text */
   background-position: center;
   height: 90vh;
 }
+
 .main-info { /* the information in the header, "Hi, my name is Stephanie" */
   display: flex;
   flex-direction: column;
@@ -125,15 +126,15 @@ nav ul li { /* this is referencing the navbar text */
 } */
 
 .main-info h1 { /* header text colors */
-  color: var(--primary-white);
-
+  color: var(--primary-aqua);
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 /**************************************** TYPED TEXT ****************************************/
 
 .typed-text {
   font-size: 2rem;
-  color: var(--primary-white)
+  color: var(--primary-white);
 }
 
 
@@ -142,9 +143,9 @@ nav ul li { /* this is referencing the navbar text */
 
 .header-about {
   text-align: left;
-  /* text-transform:; */
-  padding: 1rem 1rem 1rem 1rem;
-  margin: 1rem 1rem 1rem 1rem;
+  /* text-transform: uppercase; */
+  /* padding: 1rem 1rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 1rem; */
   font-size: 1.2rem;
 }
 
@@ -169,7 +170,8 @@ p {
 }
 
 .container-about {
-  margin: 5rem 2rem 5rem 2rem;
+  margin: 5rem 2rem 0rem 2rem;
+  margin-bottom: 0;
 }
 
 @media(max-width: 468px) {
@@ -267,7 +269,7 @@ p {
 /* the header of experience*/
 .experience h1 {
   color: var(--primary-white);
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 /* the circles on the timeline*/
@@ -392,6 +394,10 @@ p {
   padding: 3rem 0;
 }
 
+.container h1 {
+  font-size: 2rem;
+}
+
 /* image sizes and border and padding */ 
 .project-image {
   width: 15rem;
@@ -473,6 +479,7 @@ p {
 .contact h1 {
   color: var(--primary-white);
   padding: 1.3rem 0;
+  font-size: 2rem;
 }
 
 .contact p {
@@ -489,7 +496,7 @@ p {
   resize: none;
   border: 0;
   border-bottom: 0.125rem solid var(--primary-grey);
-  border-radius: 0;
+  border-radius: 0.3rem;
   color: var(--primary-blue);
   outline: 0 !important;
   box-shadow: none !important;
@@ -567,15 +574,15 @@ p {
   padding: 3rem;
 }
 
+
 .footer a {
   text-decoration: none;
-  color: var(--primary-white);
-
+  color: var(--primary-aqua);
 }
 
 .footer a:hover {
   text-decoration: none;
-  color: var(--primary-aqua);
+  color: rgb(5, 161, 252);
   cursor: pointer;
 }
 

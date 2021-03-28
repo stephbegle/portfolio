@@ -58,7 +58,7 @@ const Projects = () => {
     return (
         <div id="Projects" className="project-wrapper">
             <div className="container">
-                <h1 className="text-center py-5">Projects</h1>
+                <h1 className="text-center py-5"><span style={{color:"grey"}}>—— Projects</span>  <span style={{color:"grey"}}>——</span></h1>
                         {/*                          */}
                 <div className="image-box-wrapper row justify-content-center">
                     <div className="project-image-box" onClick={openPopupboxClogs}>

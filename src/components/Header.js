@@ -9,7 +9,7 @@ const Header = () => {
                 <h1>Stephanie Begle</h1>
                 <Typed /* this 'Typed' component was downloaded from the internet*/
                 className="typed-text"
-                strings={["Welcome!", "hope you enjoy", "my awesome sight", "and yes", "the spelling on this cite was purposeful"]}
+                strings={["Welcome!", "Soft skills?", "Leadership", "Collaboration", "Research", "Persistence", "Resourcefulness"]}
                 typeSpeed={80}
                 backSpeed={40}
                 loop

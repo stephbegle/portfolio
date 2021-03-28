@@ -22,7 +22,7 @@ const Services = () => {
 
         <div className="project-wrapper">
             <div className="container">
-                <h1 className="text-center py-5">Services</h1>
+                <h1 className="text-center py-5">Things I Know My Way Around</h1>
             </div>
             <div className="services-icons">
             <SiJavascript 

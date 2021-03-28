@@ -18,7 +18,7 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto" /* navbar links to be on the left side: ml (margin left) this is from where we can reference to css to change our link text */> 
                         <li className="nav-item active" /* this list contains a link */>
-                            <Link smooth={true} to="Home" offset={-110} className="nav-link" href="#">Home<span className="sr-only">(current)</span></Link>
+                            <Link smooth={true} to="Home" offset={-100} className="nav-link" href="#">Home<span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item" /* this list contains a link */>
                             <Link smooth={true} to="About Me" offset={-100} className="nav-link" href="#">About Me<span className="sr-only">(current)</span></Link>

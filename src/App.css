@@ -496,3 +496,27 @@ p {
     padding: 0 0.9rem;
   }
 }
+
+/**************************************** FOOTER ****************************************/
+
+.footer {
+  background: rgb(49, 49, 49);
+  color: var(--primary-aqua);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-white);
+
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-aqua);
+  cursor: pointer;
+}
+
+footer p {
+  margin-bottom: 0;
+}

@@ -33,7 +33,12 @@ const Navbar = () => {
                             <Link smooth={true} to="Contact Me" offset={-100} className="nav-link" href="#">Contact Me</Link>
                         </li>
                         <button className="resume-button" href="#">Resume</button>
-                        {/* <a href="#" className="btn-main-offer">Download Resume</a>   -> maybe will need to make the button tag an anchor tag? then changed all anchor tags with Link tag after installing react-scroll*/}
+                        {/* <a href="#" className="btn-main-offer">Download Resume</a>   -> maybe will need to make the button tag an anchor tag? then changed all anchor tags with Link tag after installing react-scroll
+                        <a type="button" 
+                            className="btn btn-secondary btn-lg"
+                            href='/path/to/ResumeAbhishek.pdf'
+                            download>
+                        </a>*/}
                     </ul>
                 </div>
             </div>

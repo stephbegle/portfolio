@@ -3,6 +3,7 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "react-scroll"
+import Resume from "../Resume/Steph_Begle_Resume.pdf"
 
 const Navbar = () => {
     return (
@@ -32,13 +33,8 @@ const Navbar = () => {
                         <li className="nav-item" /* this list also contains Link link */>
                             <Link smooth={true} to="Contact Me" offset={-100} className="nav-link" href="#">Contact Me</Link>
                         </li>
-                        <button className="resume-button" href="#">Resume</button>
-                        {/* <a href="#" className="btn-main-offer">Download Resume</a>   -> maybe will need to make the button tag an anchor tag? then changed all anchor tags with Link tag after installing react-scroll
-                        <a type="button" 
-                            className="btn btn-secondary btn-lg"
-                            href='/path/to/ResumeAbhishek.pdf'
-                            download>
-                        </a>*/}
+                        <a type="button" className="resume-button" href={Resume} download>Resume</a>
+                        {/* <a type="button className=".." href="/path/to/myResume"download>Resume</a> to be able to download my resume */}
                     </ul>
                 </div>
             </div>

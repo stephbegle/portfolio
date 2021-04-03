@@ -39,7 +39,7 @@ const Contact = () => {
     return (
         <div id="Contact Me" className="contact">
             <div className="text-center">
-            <h1><span style={{color:"grey"}}>—— Contact Me</span>  <span style={{color:"grey"}}>——</span></h1>
+            <h1><span style={{color:"var(--primary-pearl-white)"}}>Contact Me</span></h1>
             <p>Please contact me and I will get back to you as soon as possible!</p>
             <span className="success-message">{successMessage}</span>
             </div>

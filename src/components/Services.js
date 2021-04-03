@@ -22,7 +22,7 @@ const Services = () => {
 
         <div id="Services" className="project-wrapper">
             <div className="container">
-                <h1 className="text-center py-5">Technologies</h1>
+                <h1 className="tech text-center py-5">Technologies</h1>
             </div>
             <div className="services-icons">
             <SiJavascript 
@@ -44,13 +44,13 @@ const Services = () => {
             className="icon" size={70} />
             <br />
             <BiGitBranch 
-            className="icon" size={60} />
+            className="icon-git" size={60} />
             <AiFillGithub 
-            className="icon" size={60} />
+            className="icon-ghub" size={60} />
             <SiAdobelightroomcc 
-            className="icon" size={55} />
+            className="icon-lroom" size={55} />
             <SiAdobephotoshop 
-            className="icon" size={55} />
+            className="icon-pshop" size={55} />
             </div>
         </div>
     

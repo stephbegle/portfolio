@@ -29,9 +29,9 @@ const Footer = () => {
                             <div className="col">
                                 <Link smooth={true} to="Home" offset={-100} className="footer-nav">Home</Link>
                                 <br />
-                                <Link smooth={true} to="About Me" offset={-100} className="footer-nav">About Me</Link>
+                                <Link smooth={true} to="About-Me" offset={-100} className="footer-nav">About Me</Link>
                                 <br />
-                                <Link smooth={true} to="Services" offset={-100} className="footer-nav">Services</Link>
+                                <Link smooth={true} to="Services" offset={-100} className="footer-nav">Tech</Link>
                             </div>
                             <div className="col">
                                 <Link smooth={true} to="Experience" offset={-100} className="footer-nav">Experience</Link>
@@ -54,11 +54,6 @@ const Footer = () => {
                                 <FaLinkedin 
                                 className="mx-3" size={36} 
                                 cursor="pointer"/>
-                            </a>
-                            <a href="https://www.facebook.com/sbegle" target="_blank" rel="noopener noreferrer">
-                            <FaFacebook 
-                            className="mx-3" size={36} 
-                            cursor="pointer"/>
                             </a>
                             <a href="https://www.instagram.com/iso_artsy/" target="_blank" rel="noopener noreferrer">
                                 <FaInstagram 

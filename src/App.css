@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: 'Lato', sans-serif !important;
   background-color: rgba(27, 33, 61, 0.911)  !important;
   color: var(--primary-white) !important;
 }
@@ -16,6 +16,7 @@ body {
   --primary-aqua: rgba(106, 230, 252, 0.959);
   --primary-purple-grey: rgba(27, 33, 61, 0.911);
   --primary-red: rgb(184, 0, 0);
+  --primary-pearl-white: rgb(224, 224, 224);
 }
 
 /**************************************** NAVBAR ****************************************/
@@ -146,19 +147,24 @@ margin-bottom: 0rem;
 
 .container-about {
   margin: 5rem 2rem 0rem 2rem;
-  text-align: center;
+  text-align: left;
 }
 
-.header-about {
+#About-Me.container-about {
+  padding-bottom: 0 !important;
+}
+
+h1.header-about {
   text-align: left;
-  /* text-transform: uppercase; */
-  /* padding: 1rem 1rem 1rem 1rem;
-  margin: 1rem 1rem 1rem 1rem; */
-  font-size: 1.2rem;
+  font-size: 2rem;
+  font-family: 'Comfortaa', cursive;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 p {
   line-height: 1.8rem;
+  /* font-family: 'Lato', sans-serif; */
 }
 
 .img-wrap {
@@ -196,7 +202,7 @@ p {
     margin: 5rem 2rem 5rem 5rem;
   }
 
-  .header-about {
+  h1.header-about {
     text-align: center;
   }
 
@@ -209,7 +215,6 @@ p {
 @media(min-width: 1024px) {
   .header-about {
     text-align: left;
-    /* text-transform:; */
     padding: 1rem 1rem 1rem 1rem;
     margin: 1rem 1rem 1rem 1rem;
     font-size: 2.2rem;
@@ -255,7 +260,12 @@ p {
 .experience {
   padding: 0.2rem;
   padding: 1rem 1rem 1rem 1rem;
-  margin: 3rem 1rem 1rem 1rem;
+  margin: 3rem 1rem 6rem 1rem;
+}
+
+.experience-header {
+  font-family: 'Comfortaa', cursive;
+  font-size: 2rem;
 }
 
 .experience-wrapper {
@@ -269,9 +279,22 @@ p {
 }
 
 /* the header of experience*/
-.experience h1 {
-  color: var(--primary-white);
-  font-size: 2rem;
+.experience h5 {
+  color: var(--primary-aqua);
+  font-size: 1.3rem;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.dates {
+  text-align: right;
+}
+
+.city-name {
+  text-align: right;
+}
+
+.exp-content-pad {
+  padding-top: 1rem;
 }
 
 /* the circles on the timeline*/
@@ -325,7 +348,7 @@ p {
   background-color: var(--primary-blue);
   border-radius: 1rem;
   font-size: 0.875rem;
-  padding: 0 2rem 0 3rem;
+  padding: 1rem 2rem 0 2rem;
 }
 
 /* color of the years of timeline */
@@ -372,32 +395,89 @@ p {
 }
 
 /**************************************** SERVICES ****************************************/
-.project-wrapper h1 {
+
+h1.tech {
+  font-size: 1.5rem !important;
+  padding-bottom: 0;
+}
+
+.project-wrapper {
   font-size: 1.2rem;
   margin-bottom: 3rem;
   text-align: left;
   padding: 1rem 1rem 1rem 1rem;
   margin: 1rem 1rem 1rem 1rem;
 }
+
 .services-icons {
   text-align: center;
 }
+
 .icon {
-  margin: 5rem;
+  margin: 0 3rem 3rem 3rem;
   margin-top: 0;
   color: rgb(0, 195, 255);
-  margin-bottom: 4rem;
+}
+
+.icon-git {
+  margin: 0 3rem 3rem 0.8rem;
+  margin-top: 0;
+  color: rgb(0, 195, 255);
+}
+
+.icon-ghub {
+  margin: 0 3rem 3rem 3.5rem;
+  margin-top: 0;
+  color: rgb(0, 195, 255);
+}
+
+.icon-lroom {
+  margin: 0 3rem 3rem 4rem;
+  margin-top: 0;
+  color: rgb(0, 195, 255);
+}
+
+.icon-pshop {
+  margin: 0 1rem 3rem 4rem;
+  margin-top: 0;
+  color: rgb(0, 195, 255);
+}
+
+@media(max-width: 768px){
+  .icon-lroom {
+    margin: 0 3rem 3rem 0rem;
+    margin-top: 0;
+    color: rgb(0, 195, 255);
+  }
+  
+  .icon-pshop {
+    margin: 0 1.5rem 3rem 4.5rem;
+    margin-top: 0;
+    color: rgb(0, 195, 255);
+  }
+  
+  .icon-git {
+    margin: 0 3rem 3rem 2rem;
+    margin-top: 0;
+    color: rgb(0, 195, 255);
+  }
+  
+  .icon-ghub {
+    margin: 0 3rem 3rem 3.5rem;
+    margin-top: 0;
+    color: rgb(0, 195, 255);
+  }
 }
 
 /**************************************** PROJECTS ****************************************/
 /* padding above the word projects*/
 .project-wrapper {
-  /* background:;*/
-  padding: 3rem 0;
+  padding: 0;
 }
 
 .container h1 {
   font-size: 2rem;
+  font-family: 'Comfortaa', cursive;
 }
 
 /* image sizes and border and padding */ 
@@ -411,6 +491,10 @@ p {
 .project-image-box {
   position: relative;
   margin: 1rem;
+}
+
+.image-box-wrapper {
+  padding-bottom: 6rem;
 }
 
 /* ----------- OVERFLOW --------------*/
@@ -482,6 +566,7 @@ p {
   color: var(--primary-white);
   padding: 1.3rem 0;
   font-size: 2rem;
+  font-family: 'Comfortaa', cursive;
 }
 
 .contact p {

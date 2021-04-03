@@ -4,7 +4,7 @@ import author from "../DSC_0542.jpg";
 const AboutMe = () => {
     return (
         <>
-        <div id="About Me" className="container-about py-5">
+        <div id="About-Me" className="container-about py-5">
             <h1 className="header-about"><span style={{color:"grey"}}>—— About Me</span>  <span style={{color:"grey"}}>——</span>
             </h1>
             <div className="row">

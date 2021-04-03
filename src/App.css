@@ -5,7 +5,7 @@ body {
 }
 
 :root { /*  creating the variables for our colors */
-  --primary-white: rgb(233, 233, 233);
+  --primary-white: rgb(214, 214, 214);
   --primary-purple: rgb(140, 127, 214);
   --primary-dark: rbga(255, 255, 255, 0);
   --primary-green: rgb(0, 155, 0);
@@ -16,7 +16,7 @@ body {
   --primary-aqua: rgba(106, 230, 252, 0.959);
   --primary-purple-grey: rgba(27, 33, 61, 0.911);
   --primary-red: rgb(184, 0, 0);
-  --primary-pearl-white: rgb(224, 224, 224);
+  --primary-pearl-white: rgb(204, 204, 204);
 }
 
 /**************************************** NAVBAR ****************************************/
@@ -164,7 +164,6 @@ h1.header-about {
 
 p {
   line-height: 1.8rem;
-  /* font-family: 'Lato', sans-serif; */
 }
 
 .img-wrap {
@@ -209,6 +208,23 @@ p {
   p {
     line-height: 1.8rem;
     margin-bottom: 4rem;
+  }
+}
+
+@media(max-width: 768px){
+  h1.header-about {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  p {
+    padding-bottom: 0.8rem;
+    text-align: center;
+  }
+
+  .about-para {
+    padding-bottom: 2rem;
   }
 }
 
@@ -275,14 +291,13 @@ p {
   background-color: var(--primary-grey);
   border-radius: 1rem;
   opacity: .8;
-  /* background-repeat: repeat; this aint repeating btw*/
 }
 
 /* the header of experience*/
 .experience h5 {
   color: var(--primary-aqua);
   font-size: 1.3rem;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Comfortaa', cursive;
 }
 
 .dates {
@@ -295,6 +310,11 @@ p {
 
 .exp-content-pad {
   padding-top: 1rem;
+}
+
+.bullets {
+  line-height: 1.5rem;
+  padding-left: 2rem;
 }
 
 /* the circles on the timeline*/
@@ -392,6 +412,10 @@ p {
   .year-pos-right {
     text-align: left;
   }
+
+  .bullets {
+    padding-left: 0.8rem;
+  }
 }
 
 /**************************************** SERVICES ****************************************/
@@ -484,7 +508,8 @@ h1.tech {
 .project-image {
   width: 15rem;
   height: 8rem;
-  border: 1px solid var(--primary-aqua);
+  border: 3px solid var(--primary-aqua);
+  border-radius: 2%;
   padding: 0 0.5rem;
 }
 
@@ -675,4 +700,11 @@ h1.tech {
 
 footer p {
   margin-bottom: 0;
+}
+
+@media(max-width: 768px){
+
+  .social-media {
+    padding: 4rem 0 1rem 0;
+  }
 }

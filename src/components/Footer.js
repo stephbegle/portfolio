@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="footer">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-4 col-md-6 col-sm-6">
+                    <div className="footer-info col-lg-4 col-md-6 col-sm-6">
                         <div className="d-flex">
                             <p>San Diego, CA </p>
                         </div>
@@ -43,7 +43,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
-                        <div className="d-flex justify-content-center">
+                        <div className="social-media d-flex justify-content-center">
                             <a href="https://github.com/stephbegle" target="_blank" rel="noopener noreferrer">
                                 {/* target set to blank allows the page to be opened in a new tab, rel is a safety measure */}
                                 <FaGithub

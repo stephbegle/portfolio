@@ -595,7 +595,7 @@ h1.tech {
 }
 
 .contact p {
-  color: rgb(255, 255, 255);
+  color: var(--primary-white);
   font-size: 1.2rem;
 }
 

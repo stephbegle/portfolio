@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "react-scroll"
 import Resume from "../Resume/Steph_Begle_Resume.pdf"
+import logo from "../project-imgs/Steph-logo1.png"
 
 const Navbar = () => {
     return (
@@ -11,7 +12,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg bg-purple fixed-top" /* here we can change the color of the navbar */>
             <div className="container">
 
-                <a className="navbar-brand" href="#">SB</a>
+                <a className="navbar-brand" href="#"></a><img src={logo}></img>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <FontAwesomeIcon icon={ faBars } style={{ color: "white"}}/>
                 </button>

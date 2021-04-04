@@ -1,7 +1,8 @@
 import React from "react";
 import clogs from "../project-imgs/clogs-game.png";
 import tictactoe from "../project-imgs/tictac.png";
-import piglatin from "../project-imgs/pig-latin.png"
+import piglatin from "../project-imgs/pig-latin.png";
+import battleship from "../project-imgs/battleship.png";
 import "react-popupbox/dist/react-popupbox.css";
 import { PopupboxManager, PopupboxContainer } from "react-popupbox";
 
@@ -52,7 +53,8 @@ const Projects = () => {
         fadeInSpeed: 500,
         fadeOutSpeed: 200
     }
-    
+
+    // Pig Latin
     const openPopupboxPig = () => {
         const content = (
         <>
@@ -69,6 +71,29 @@ const Projects = () => {
         titleBar:{
             enable: true,
             text: "Pig Latin Translator Project",
+        },
+        fadeIn: true,
+        fadeInSpeed: 500,
+        fadeOutSpeed: 200
+    }
+
+    // Battleship
+    const openPopupboxBattleShip = () => {
+        const content = (
+        <>
+        <img className="projects-image-popupbox" src={battleship} alt="Battle Ship Game project" />
+        <p className="para-desc">This is a simple game of Battle ship built with python!</p>
+        <b className="link-name">Github: </b><a className="hyper-link" onClick={() => window.open("https://github.com/stephbegle/game-projects")}>https://github.com/stephbegle/game-projects</a>
+        </>  
+        )
+        
+        PopupboxManager.open({content})
+    }
+
+    const popupboxConfigBattleShip = {
+        titleBar:{
+            enable: true,
+            text: "Battle Ship Game Project",
         },
         fadeIn: true,
         fadeInSpeed: 500,
@@ -93,6 +118,11 @@ const Projects = () => {
                         {/*                          */}
                     <div className="project-image-box" onClick={ openPopupboxPig }>
                         <img className="project-image" src={piglatin} alt="Pig Latin Translator" />
+                        <div className="overflow"></div>
+                    </div>
+                        {/*                          */}
+                    <div className="project-image-box" onClick={ openPopupboxBattleShip }>
+                        <img className="project-image" src={battleship} alt="Battle Ship Game" />
                         <div className="overflow"></div>
                     </div>
                 </div>

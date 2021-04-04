@@ -166,6 +166,10 @@ p {
   line-height: 1.8rem;
 }
 
+.entire-img {
+
+}
+
 .img-wrap {
   display: flex;
   justify-content: center;
@@ -180,6 +184,7 @@ p {
   border: 3px solid var(--primary-aqua);
   border-radius: 2%;
   margin-right: 3rem;
+  margin-top: 3.5rem;
 }
 
 .container-about {
@@ -191,6 +196,7 @@ p {
   .profile-img {
     width: 16rem;
     text-align: center;
+    margin-top: 0;
   }
 
   .img-wrap {
@@ -300,16 +306,18 @@ p {
   font-family: 'Comfortaa', cursive;
 }
 
-.dates {
+.dates-left {
   text-align: right;
+  line-height: 1.5rem;
 }
 
-.city-name {
-  text-align: right;
+.dates-right {
+  text-align: left;
+  line-height: 1.5rem;
 }
 
 .exp-content-pad {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 
 .bullets {
@@ -415,6 +423,14 @@ p {
 
   .bullets {
     padding-left: 0.8rem;
+  }
+
+  .dates-left {
+    text-align: left;
+  }
+  
+  .dates-right {
+    text-align: left;
   }
 }
 

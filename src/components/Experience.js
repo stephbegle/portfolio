@@ -26,7 +26,7 @@ const Experience = () => {
                         <h5 className="year-pos-right">Sales Specialist - Apple, Inc.</h5>
                         <h6 className="dates-left">
                             <span style={{color:"var(--primary-aqua)"}}>Oct 2019 - March 2020</span>
-                        <br/> Ja Jolla, Ca</h6>
+                        <br/> La Jolla, Ca</h6>
                         <ul className="bullets">
                             <li className="exp-content-pad">Researched product functionalities to aid customer understanding of them with helpful analogies.</li><li>Created functional web applications using API with the Rails framework.</li>Promoted Apple services that would be helpful for user experiences and increased insurance enrollments (AppleCare+) by about 25%.  <li>Helped customers understand phone service activation requirements and steps.</li>
                         </ul>
